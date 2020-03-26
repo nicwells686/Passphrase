@@ -1,0 +1,10 @@
+# use version 3.7 of compose file definition 
+version: '3.7'
+
+services: 
+    frontend:
+        build: './'
+        ports: 
+            - '5000:5000'
+        read_only: true
+        
